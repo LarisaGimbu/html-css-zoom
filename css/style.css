@@ -5,7 +5,9 @@
 }
 
 body{
+  font-family: 'Roboto', sans-serif;
   background-color: black;
+  font-size: 14px;
 }
 
 .clearfix::after{
@@ -44,7 +46,7 @@ header .btn{
 main{
  width: 100%;
  height: calc(100vh - 150px);
- margin-top: 70px;
+ margin-top: 50px;
  overflow: auto;
 }
 
@@ -58,7 +60,7 @@ main .item{
   position: relative;
   width: 197px;
   height: 115px;
-  background-color: violet;
+  background-color: white;
   margin: 3px;
 }
 
@@ -92,26 +94,59 @@ footer{
   height: 70px;
   background-color: #212121;
   color: white;
+  border-bottom: 1px solid white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 /* mic-cam  */
-.mic-cam{
+ul.utility{
   display: flex;
+  list-style: none;
 }
 
-.mute, .video{
-  padding: 10px 20px 10px 10px;
+ul.utility li{
+  padding: 10px 10px 10px 5px;
   text-align: center;
 }
 
-.mic-cam i{
-  font-size: 25px;
+ul.utility li i{
+  font-size: 20px;
   padding-bottom: 5px;
 }
 
-/* utility */
+ul.utility li.more i{
+  font-size: 7px;
+}
+
+ul.utility li.more p{
+  padding-top: 5px;
+}
+
+ul.utility li:hover, .btn:hover{
+  cursor: pointer;
+}
+
+/* footer center */
+.utility li.chevron{
+  display: flex; 
+  align-items: center;
+}
+
+.utility li.chevron i{
+  font-size: 10px;
+  align-items: center;
+}
+
+.utility li.active i{
+  color: #4AC911;
+}
+
+/* end-meeting */
 .end-meeting .btn{
   color: red;
   background-color: #4A4A4A;
   padding: 26px 15px;
+  font-weight: bold;
+  border-bottom-right-radius: 10px;
 }
