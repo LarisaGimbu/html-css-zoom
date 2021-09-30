@@ -62,11 +62,23 @@ main .item{
   margin: 3px;
 }
 
+main .item .fas{
+  position: absolute;
+  bottom: 7px;
+  left: 2px;
+  color: white;
+  z-index: 20;
+  font-size: 12px;
+}
+
 main .item label{
   position: absolute;
   bottom: 0;
   left: 0;
   color: white;
+  background-color: rgba(0, 0, 0, 0.486);
+  padding: 5px 5px 5px 20px;
+  font-size: 12px;
 }
 
 /* FOOTER  */
