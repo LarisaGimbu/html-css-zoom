@@ -8,6 +8,12 @@ body{
   background-color: black;
 }
 
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* HEADER  */
 header{
   position: fixed;
@@ -18,10 +24,28 @@ header{
   z-index: 50;
 }
 
+.float-right{
+  float: right;
+}
+
+.float-right div{
+  display: inline-block;
+}
+
+header .btn{
+  color: white;
+  background-color: #4A4A4A;
+  margin: 5px 5px 0 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 /* MAIN  */
 main{
  width: 100%;
- margin: 70px 0 90px;
+ height: calc(100vh - 150px);
+ margin-top: 70px;
+ overflow: auto;
 }
 
 .flex-container{
